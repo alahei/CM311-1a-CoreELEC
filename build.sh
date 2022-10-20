@@ -56,7 +56,7 @@ echo "Copying firmware files"
 sudo ln -s ../rtl_bt/rtl8761b_config.bin ${firmware_path}/rtlbt/rtl8761b_config
 sudo ln -s ../rtl_bt/rtl8761b_fw.bin ${firmware_path}/rtlbt/rtl8761b_fw
 sudo ln -s ../rtkbt-firmware-aml.service ${systemd_path}/multi-user.target.wants/rtkbt-firmware-aml.service
-exit
+
 echo "Compressing SYSTEM image"
 sudo mksquashfs ${system_root} SYSTEM -comp lzo -Xalgorithm lzo1x_999 -Xcompression-level 9 -b 524288 -no-xattrs
 echo "Replacing SYSTEM image"
