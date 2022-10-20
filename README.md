@@ -20,6 +20,6 @@ cd ~
 
 git clone https://github.com/alahei/CM311-1a-CoreELEC.git
 cd CM311-1a-CoreELEC
-./build.sh
+sh build.sh
 ```
 有可能需要输入sudo密码
